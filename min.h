@@ -1,6 +1,12 @@
 #include<iostream>
 
-void min()
+int min(int *tab, int size)
 {
-	std::cout << "Nie am co wyświetlać :P " << std::endl;
+	int min = tab[0];
+	for(int i = 1; i < size; i++)
+	{
+		if(tab[i] < min)
+			min = tab[i];
+	}
+	return min;
 }
